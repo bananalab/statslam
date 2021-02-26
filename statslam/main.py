@@ -1,5 +1,6 @@
 import click
 import logging
+import lorem
 import os
 import time
 from datadog import initialize, statsd
@@ -16,6 +17,8 @@ initialize(**options)
 @click.command()
 def cli():
     while(True):
-        statsd.increment('example_metric.gauge', tags=["environment:statslam"])
+        statsd.increment('example_metric.gauge', tags=['environment:statslam'])
+        statsd.event(lorem.sentence(), lorem.word(),
+                     alert_type='info', tags=['environment:statslam'])
         logging.debug('tick')
         time.sleep(1)
