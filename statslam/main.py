@@ -20,5 +20,5 @@ def cli():
         statsd.increment('example_metric.gauge', tags=['environment:statslam'])
         statsd.event(lorem.sentence(), lorem.word(),
                      alert_type='info', tags=['environment:statslam'])
-        logging.debug('tick')
+        logging.info('tick')
         time.sleep(1)
