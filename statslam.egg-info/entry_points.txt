@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        statslam=statslam.main:cli
+    

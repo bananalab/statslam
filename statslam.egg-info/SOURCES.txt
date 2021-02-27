@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+statslam/__init__.py
+statslam/main.py
+statslam.egg-info/PKG-INFO
+statslam.egg-info/SOURCES.txt
+statslam.egg-info/dependency_links.txt
+statslam.egg-info/entry_points.txt
+statslam.egg-info/requires.txt
+statslam.egg-info/top_level.txt
